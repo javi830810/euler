@@ -10,5 +10,4 @@ def fib(max):
         x = y
         y = x + temp
 
-print list(fib(4000000))
 print sum(fib(4000000))
