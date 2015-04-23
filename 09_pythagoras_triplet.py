@@ -1,5 +1,14 @@
-for x in range(3,1000):
-    for y in range(3,1000):
-        for z in range(3,1000):
-            if x**2 + y**2 == z**2 and x+y+z == 1000:
-                print '%s + %s + %s = 1000' %(x,y,z)
+i = 2
+j = 2
+stop = False
+while i < 1000:
+    i += 1
+    j = 1
+    if not stop:
+        while j < 1000:
+            j += 1
+            k = 1000 - i - j
+            if i**2 + j**2 == k**2:
+                print '%s + %s + %s = 1000' % (i, j, k)
+                stop = True
+                break
